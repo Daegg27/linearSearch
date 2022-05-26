@@ -7,13 +7,13 @@ exports.linearSearch = function(valueToFind, arrayToSearchThrough) {
 
     for (let i = 0; i < arrayToSearchThrough.length; i++){
         if (arrayToSearchThrough[i] == valueToFind){
-            return arrayToSearchThrough[i];
+            return i;
         }
     }
     return undefined
 };
 
-function GlobalSearch(value, oldArray){
+exports.linearSearchGlobal = function(value, oldArray){
     let newArray = [];
    
     for (let i = 0; i < oldArray.length; i++){
@@ -26,7 +26,7 @@ function GlobalSearch(value, oldArray){
 
 
 }
-// // console.log(this.linearSearch(3, [1, 2, 3]));
+// console.log(this.linearSearch(3, [1, 2, 3]));
 // console.log(GlobalSearch("a", ["b", "a", "n", "a", "n", "a", "s"]))
 
 
